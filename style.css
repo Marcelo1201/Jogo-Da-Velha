@@ -8,14 +8,21 @@ body{
 }
 
 .conteudo{
-    width: 40%;
-    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    margin: 0px auto;
 }
 
 .imagens{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+
 
 .simbolo{
     height: 25px;
@@ -32,4 +39,43 @@ body{
 .reload:active{
     box-shadow: none;
     transform: translate(0%, 3%);
+}
+
+.board{
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+}
+
+.space img{
+    height: 80px;
+}
+
+.space:nth-child(1), .space:nth-child(2), .space:nth-child(3){
+    border-top: none;
+}
+
+.space:nth-child(1), .space:nth-child(4), .space:nth-child(7){
+    border-left: none;
+}
+
+.space:nth-child(7), .space:nth-child(8), .space:nth-child(9){
+    border-bottom: none;
+}
+
+.space:nth-child(3), .space:nth-child(6), .space:nth-child(9){
+    border-right: none;
 }
