@@ -1,3 +1,7 @@
+:root{
+    --cor-branca: #fafafa;
+}
+
 body{
     background-color: #192730;
     height: 100vh;
@@ -23,7 +27,7 @@ body{
 }
 
 .reiniciar{
-    color: white;
+    color: var(--cor-branca);
     font-size: 25px;
     text-align: center;
     margin-top: 2em;
@@ -44,7 +48,15 @@ body{
     align-items: center;
 }
 
+.identificador{
+    text-align: center;
+}
 
+.player{
+    color: var(--cor-branca);
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
+}
 
 .simbolo{
     height: 25px;
@@ -66,7 +78,7 @@ body{
     align-items: center;
     height: 100px;
     width: 100px;
-    border: 2px solid white;
+    border: 2px solid var(--cor-branca);
 }
 
 .space img{
