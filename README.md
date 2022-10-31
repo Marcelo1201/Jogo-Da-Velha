@@ -16,7 +16,7 @@ Afim de aprimorar minhas aptidões em desenvolvimento web.
 - HTML
 - CSS
 
-# Implantação
+## Implantação
 - Netlify
 
 # Autor 
